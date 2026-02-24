@@ -1,0 +1,33 @@
+           
+{% extends 'base.html' %}
+{% block content %}
+
+<a href="/form">+ New Appraisal</a>
+
+<h2>Employees</h2>
+
+<table border=1 cellpadding=6>
+<tr>
+<th>Name</th>
+<th>Punctuality</th>
+<th>Regularity</th>
+<th>Performance</th>
+<th>Total</th>
+<th>Rating</th>
+</tr>
+
+{% for r in records %}
+<tr>
+<td>{{r[1]}}</td>
+<td>{{r[5]}}</td>
+<td>{{r[6]}}</td>
+<td>{{r[7]}}</td>
+<td>{{r[8]}}</td>
+<td>{{r[9]}}</td>
+</tr>
+{% endfor %}
+
+</table>
+
+{% endblock %}
+               
