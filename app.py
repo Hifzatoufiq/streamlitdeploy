@@ -1,5 +1,5 @@
 import streamlit as st
-from google.genai import Client
+
 import os
 
 # Set page config
